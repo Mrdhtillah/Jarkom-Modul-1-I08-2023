@@ -25,14 +25,22 @@ User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya
 - Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
 ## Jawaban Soal 1 : 
+- 258040667
+- 1044861039
+- 1044861039
+- 258040696
 
+![Foto](./img/1a.png)
+![Foto](./img/1b.png)
 ---
 
 ## Soal 2 
 (REVISI) Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
-## Jawaban Soal 2 : 
+## Jawaban Soal 2 :
+gunicorn
 
+![Foto](./img/2.png)
 ---
 
 ## Soal 3
@@ -41,14 +49,19 @@ Berapa banyak paket yang tercapture dengan IP source maupun destination address 
 Protokol layer transport apa yang digunakan?
 
 ## Jawaban Soal 3 : 
+- 21 paket
+- UDP
 
+![Foto](./img/3.png)
 ---
 
 ## Soal 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 
 ## Jawaban Soal 4 : 
+0x18e5
 
+![Foto](./img/4.png)
 ---
 
 ## Soal 5 
@@ -72,25 +85,36 @@ Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 Berapa jumlah packet yang menuju IP 184.87.193.88?
 
 ## Jawaban Soal 7 : 
+6
 
+![Foto](./img/7.png)
 ---
 
 ## Soal 8
 (REVISI) Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
 
 ## Jawaban Soal 8 : 
+tcp.dstport == 80 || udp.dstport == 80
 
+![Foto](./img/8.png)
 ---
 
 ## Soal 9
 (REVISI) Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
 
 ## Jawaban Soal 9 : 
+ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
 
+![Foto](./img/9.png)
 ---
 
 ## Soal 10
 (REVISI) Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
 ## Jawaban Soal 10 : 
+dhafin:kesayangannyak0k0 
 
+![Foto](./img/10a.png)
+![Foto](./img/10b.png)
+![Foto](./img/10c.png)
+---
