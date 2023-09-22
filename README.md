@@ -24,45 +24,62 @@ User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya
 - Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 - Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
-## Jawaban Soal 1 : 
-- 258040667
-- 1044861039
-- 1044861039
-- 258040696
+## Answer : 
+- `258040667`
+- `1044861039`
+- `1044861039`
+- `258040696`
 
-![Foto](./img/1a.png)
-![Foto](./img/1b.png)
+## Explanation :
+<img src="./img/1a.png" width="500">
+<img src="./img/1b.png" width="500">
+
+
 ---
+
 
 ## Soal 2 
 (REVISI) Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
-## Jawaban Soal 2 :
-gunicorn
+## Answer : 
+`gunicorn`
 
-![Foto](./img/2.png)
+## Explanation :
+<img src="./img/2.png" width="500">
+
+
 ---
+
 
 ## Soal 3
 Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
 Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
 Protokol layer transport apa yang digunakan?
 
-## Jawaban Soal 3 : 
-- 21 paket
-- UDP
+## Answer : 
+- `21 paket`
+- `UDP`
 
-![Foto](./img/3.png)
+## Explanation :
+<img src="./img/3.png" width="500">
+
+
 ---
+
 
 ## Soal 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 
-## Jawaban Soal 4 : 
-0x18e5
+## Answer : 
+`0x18e5`
 
-![Foto](./img/4.png)
+## Explanation :
+
+<img src="./img/4.png" width="500">
+
+
 ---
+
 
 ## Soal 5 
 (REVISI) Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
@@ -70,63 +87,95 @@ Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 - Port berapakah pada server yang digunakan untuk service SMTP?
 - Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
 
-## Jawaban Soal 5 : 
-- 60
-- 25
-- 74.53.140.153
+## Answer : 
+- `60`
+- `25`
+- `74.53.140.153`
 
-![Foto](./img/5a.png)
-![Foto](./img/5b.png)
-![Foto](./img/5c.png)
-![Foto](./img/5d.png)
-![Foto](./img/5e.png)
-![Foto](./img/5f.png)
+## Explanation :
+
+<img src="./img/5a.png" width="500">
+<img src="./img/5b.png" width="500">
+<img src="./img/5c.png" width="500">
+<img src="./img/5d.png" width="500">
+<img src="./img/5e.png" width="500">
+<img src="./img/5f.png" width="500">
+
+
 ---
+
 
 ## Soal 6 
 (REVISI) Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
 
-## Jawaban Soal 6 : 
-JDRNJA
+## Answer : 
+`JDRNJA`
 
-![Foto](./img/6a.png)
-![Foto](./img/6b.png)
+## Explanation :
+
+<img src="./img/6a.png" width="500">
+<img src="./img/6b.png" width="500">
+
+
 ---
+
 
 ## Soal 7
 Berapa jumlah packet yang menuju IP 184.87.193.88?
 
-## Jawaban Soal 7 : 
-6
+## Answer : 
+`6`
 
-![Foto](./img/7.png)
+## Explanation :
+
+<img src="./img/7.png" width="500">
+
+
 ---
+
 
 ## Soal 8
 (REVISI) Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
 
-## Jawaban Soal 8 : 
-tcp.dstport == 80 || udp.dstport == 80
+## Answer : 
+`tcp.dstport == 80 || udp.dstport == 80`
 
-![Foto](./img/8.png)
+## Explanation :
+
+<img src="./img/8.png" width="500">
+
+
 ---
+
 
 ## Soal 9
 (REVISI) Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
 
-## Jawaban Soal 9 : 
-ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
+## Answer : 
+`ip.src == 10.51.40.1 && ip.dst != 10.39.55.34`
 
-![Foto](./img/9.png)
+## Explanation :
+At the top of the Wireshark window labeled "Display Filter, we typed the following query filter that requests Wireshark to display only packets with the source IP address (ip.src) of 10.51.40.1 and not the destination IP address (ip.dst) of 10.39.55.34.
+
+<img src="./img/9.png" width="500">
+
+Wireshark will only display packets originating from the IP address 10.51.40.1 and not going to the IP address 10.39.55.34.
+
+
 ---
+
 
 ## Soal 10
 (REVISI) Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
 
-## Jawaban Soal 10 : 
-dhafin:kesayangannyak0k0 
+## Answer : 
+`dhafin:kesayangannyak0k0`
 
-![Foto](./img/10a.png)
-![Foto](./img/10b.png)
-![Foto](./img/10c.png)
+## Explanation :
+
+<img src="./img/10a.png" width="500">
+<img src="./img/10b.png" width="500">
+<img src="./img/10c.png" width="500">
+
+
 ---
